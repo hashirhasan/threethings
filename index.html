@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,5 +16,19 @@
         <div id="third"></div>
     </div>
     <script src="./script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	
+$(document).ready(function(){
+  $("button").click(function(){
+  $("div.container").append("<div id="+Math.random()+">" +$('#add').val()+"</div>");
+  });
+});
+</script>
+	<div>
+		<input  id="add" type="text">
+			<button>ADD New Habit </button>
+	</div>
+
 </body>
 </html>
